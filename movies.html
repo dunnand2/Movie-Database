@@ -1,0 +1,82 @@
+<!-- author: Jake Schlaerth -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <title>View Movies</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar-container">
+        <nav class="navbar-container">
+            <ul class="navbar-list">
+                <li><a href="movies.html">View movies</a></li>
+                <li><a href="actors.html">View actors</a></li>
+                <li><a href="directors.html">View directors</a></li>
+                <li><a href="composers.html">View composers</a></li>
+                <li><a href="performances.html">View actor performances</a></li>
+                <li><a href="genres.html">View genres</a></li>
+                <li><a href="genreInstances.html">View all genre instances</a>
+                </li>
+            </ul>
+        </nav>
+
+        <form method="POST" id="addMovieForm">
+            <fieldset>
+                <legend>Add New Movie</legend>
+                <label>
+                    Movie Title:
+                    <input type="text" name="title" id="titleInput" />
+                </label>
+                <label>
+                    Year Released:
+                    <input type="number" name="releaseYear"
+                        id="releaseYearInput" value="2000" min="1950"
+                        max="2022" />
+                </label>
+                <label>
+                    Director:
+                    <select name="director" id="addDirectorSelect">
+                    </select>
+                </label>
+                <label>
+                    Composer:
+                    <select name="composer" id="addComposerSelect">
+                    </select>
+                </label>
+                <input type="submit" value="submit" />
+            </fieldset>
+        </form>
+
+        <div id="searchDiv">
+            <form id="movieSearch">
+                <fieldset>
+                    <legend>Search for a movie</legend>
+                    <input type="text" id="searchInput" placeholder="Movie Name">
+                    <button type="submit" form="movieSearch"
+                        value="submit" id="searchButton">Search</button>
+                </fieldset>
+            </form>
+        </div>
+        <h1>Movies</h1>
+        <div id="mainTableContainer">
+            <table id="moviesTable">
+                <tr id='headerRow'>
+                    <th style="display: none;">id</th>
+                    <th>title</th>
+                    <th>year</th>
+                    <th>director</th>
+                    <th>composer</th>
+                </tr>
+            </table>
+        </div>
+</body>
+<script src="moviesScript.js"></script>
+<!-- <script src="script.js"></script> -->
+
+</html>

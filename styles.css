@@ -1,0 +1,99 @@
+.navbar-container{
+    border-radius: 12px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+.statement-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.statement-container p{
+    width: 50%;
+}
+
+ul{
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+    line-height: 2;
+    margin: 0 100px;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    table-layout: fixed;
+}
+
+#moviesTable {
+    border-style: none;;
+}
+
+table, th, td {
+    border: 1px solid black;
+  }
+
+r
+th, td {
+    width: 150px;
+    margin: 0px;
+    padding: 0px;
+    max-width: 150px;
+}
+
+form {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    width: 150px;
+}
+
+#moviesTable {
+    margin: 0 auto;
+}
+
+* {
+    font-family: Roboto;
+}
+
+fieldset {
+     /* width: 78%; */
+    margin: 0 auto;
+}
+
+button{
+    margin: 10px 10px;
+    width: 90%;
+    max-width: 150px;;
+}
+
+#searchButton {
+    width: 150px;
+}
+
+fieldset{
+    margin: 20px;
+}
+
+
+

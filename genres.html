@@ -1,0 +1,58 @@
+<!-- author: Jake Schlaerth -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <title>View Genres</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar-container">
+        <ul class="navbar-list">
+            <li><a href="movies.html">View movies</a></li>
+            <li><a href="actors.html">View actors</a></li>
+            <li><a href="directors.html">View directors</a></li>
+            <li><a href="composers.html">View composers</a></li>
+            <li><a href="performances.html">View actor performances</a></li>
+            <li><a href="genres.html">View genres</a></li>
+            <li><a href="genreInstances.html">View all genre instances</a>
+            </li>
+        </ul>
+    </nav>
+
+    <form method="POST" id="addGenreForm">
+        <fieldset>
+            <legend>Add New Genre</legend>
+            <input type="text" name="name" id="nameInput"
+                placeholder="Genre Name" />
+            <input type="submit" value="submit" id="newGenreSubmit" />
+        </fieldset>
+    </form>
+
+    <div id="searchDiv">
+        <form id="genreSearch">
+            <fieldset>
+                <legend>Show Movies with a Particular Genre</legend>
+                <input type="text" id="searchInput"
+                    placeholder="Genre Name">
+                <button type="submit" form="genreSearch"
+                    value="Submit" id="searchButton">Search</button>
+            </fieldset>
+        </form>
+    </div>
+    <h1>Genres</h1>
+    <table id="genresTable">
+        <tr>
+            <th style="display: none">id</th>
+            <th>Genre</th>
+        </tr>
+    </table>
+</body>
+<script src="genresScript.js"></script>
+
+</html>

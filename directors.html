@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Directors</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar-container">
+        <ul class="navbar-list">
+            <li><a href="movies.html">View movies</a></li>
+            <li><a href="actors.html">View actors</a></li>
+            <li><a href="directors.html">View directors</a></li>
+            <li><a href="composers.html">View composers</a></li>
+            <li><a href="performances.html">View actor performances</a></li>
+            <li><a href="genres.html">View genres</a></li>
+            <li><a href="genreInstances.html">View all genre instances</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class='table-and-forms'>
+        
+        <form method="POST" id="addDirectorForm">
+            <fieldset>
+                <legend>Add New Director</legend>
+                <label>
+                    First Name:
+                    <input type="text" name="firstNameInput" id="firstNameInput" />
+                </label>
+                <label>
+                    Last Name:
+                    <input type="text" name="lastNameInput" id="lastNameInput" />
+                </label>
+                <input type="submit" value="submit" />
+            </fieldset>
+        </form>
+
+        <div id="searchDiv">
+            <form id="directorSearch">
+                <fieldset>
+                    <legend>Search For a Director</legend>
+                    <input type="text" id="searchInput" placeholder="Director Name">
+                    <button type="submit" form="directorSearch" value="submit"
+                        id="searchButton">Search</button>
+                </fieldset>
+            </form>
+        </div>
+        <h1>Directors</h1>
+        <table id='directorsTable'>
+            <tbody>
+                <thead>
+                    <row>
+                        <th style="display: none"></th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                    </row>
+                </thead>
+            </tbody>
+        </table>
+
+
+    </div>
+    <script src="directorsScript.js"></script>
+</body>
+
+</html>

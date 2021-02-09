@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Performances</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar-container">
+        <ul class="navbar-list">
+            <li><a href="movies.html">View movies</a></li>
+            <li><a href="actors.html">View actors</a></li>
+            <li><a href="directors.html">View directors</a></li>
+            <li><a href="composers.html">View composers</a></li>
+            <li><a href="performances.html">View actor performances</a></li>
+            <li><a href="genres.html">View genres</a></li>
+            <li><a href="genreInstances.html">View all genre instances</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class='table-and-forms'>
+
+        <form method="POST" id="addPerformanceForm">
+            <fieldset>
+                <legend>Add New Performance</legend>
+                <label>
+                    Actor:
+                    <select name="actor" id="addActorSelect">
+                    </select>
+                </label>
+                <label>
+                    Movie:
+                    <select name="composer" id="addMovieSelect">
+                    </select>
+                </label>
+                <input type="submit" value="submit" />
+            </fieldset>
+        </form>
+        <h1>Performances</h1>
+        <table id="performancesTable">
+            <thead>
+                <tr>
+                    <th style="display:none;">actor id</th>
+                    <th style="display:none;">movie id</th>
+                    <th>Movie</th>
+                    <th>Actor</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+
+    </div>
+    <script src="performancesScript.js"></script>
+</body>
+
+</html>
